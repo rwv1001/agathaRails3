@@ -15,7 +15,7 @@
 </div>
 
 <div id = "search_form_div" >
-    <%  form_tag  :url => { :action => :test } , :remote=>true do %>
+    <%=  form_tag  :url => { :action => :test } , :remote=>true do %>
         <div id = "search_results" >
 
         </div>
@@ -35,7 +35,7 @@
         </div>
     <% end  %>
 </div>
-<div > <% form_tag :action => :import_csv do %>
+<div > <%= form_tag :action => :import_csv do %>
   <p> <%= submit_tag "Import CSV" %></p>
 <% end %></div>
 

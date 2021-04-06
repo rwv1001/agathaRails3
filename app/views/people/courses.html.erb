@@ -34,7 +34,7 @@
 <p>&nbsp;</p>
 <div class="field" id="progadd">
   <p>Add a programme to this student:</p>
-  <% form_for @programme, :url => { :action => :add_programme } do |form| %>
+  <%= form_for @programme, :url => { :action => :add_programme } do |form| %>
     <%= form.hidden_field :person_id %>
     <%= form.label :programme_id, "Programme:" %>
     <%= form.select :programme_id, @programmes %>
@@ -61,7 +61,7 @@
 </div>
 <div class="field" id="Layer2">
   <p>Add a course to this student:</p>
-  <% form_for @student_course, :url=>{ :action => :add_scourse } do |form| %>
+  <%= form_for @student_course, :url=>{ :action => :add_scourse } do |form| %>
     <%= form.hidden_field :person_id %>
     <%= form.label :course_id, "Course:" %>
     <%= form.select :course_id, @courses %>
